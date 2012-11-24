@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game of life : TDD</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="fr" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" type="text/css" href="libs/jasmine-1.2.0/jasmine.css">
+  		
+		<script type="text/javascript" src="libs/jquery.min.js"></script>
+		<script type="text/javascript" src="libs/jasmine-1.2.0/jasmine.js"></script>
+		<script type="text/javascript" src="libs/jasmine-1.2.0/jasmine-html.js"></script>
+		<!-- src -->
+		<script type="text/javascript" src="src/cell.js"></script>
+		<!-- spec -->
+		<script type="text/javascript" src="spec/cell.spec.js"></script>
+		<script type="text/javascript">
+		$(document).ready( function() {
+			jasmine.getEnv().addReporter(new jasmine.TrivialReporter());  
+			jasmine.getEnv().execute();
+		});
+		</script>
+    </head>
+    <body>
+    </body>
+</html>

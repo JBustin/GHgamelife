@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game of life</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="fr" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" type="text/css" href="main.css">
+  		
+		<script type="text/javascript" src="libs/jquery.min.js"></script>
+		<!-- src -->
+		<script type="text/javascript" src="src/cell.js"></script>
+		<script type="text/javascript">
+		$(document).ready( function() {
+			var gameOfLife = new GameOfLife(50, "#display", [
+				{x:20, y:20},
+				{x:21, y:20},
+				{x:21, y:21},
+				{x:21, y:22},
+				{x:22, y:22},
+			
+		    	{x:25, y:22},
+		    	{x:26, y:24},
+			
+		    	{x:23, y:24},
+		    	{x:24, y:24},
+		    	
+		    	{x:26, y:26},
+		    	{x:26, y:27},
+		    	{x:26, y:28},
+		    	/*
+		    	{x:23, y:29},
+		    	{x:24, y:28},
+		    	{x:24, y:29},
+		    	{x:24, y:30},
+		    	{x:25, y:29} */
+	    	]);
+	    	gameOfLife.start(40, 250);
+		});
+		</script>
+    </head>
+    <body>
+    	
+    	<div id="display"></div>
+    	
+    </body>
+</html>

@@ -1,0 +1,12 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+table td {
+	width:5px;
+	height:5px;
+	background-color:#EEEEEE;
+}
+table td.alived {
+	background-color:black;
+}
